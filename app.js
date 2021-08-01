@@ -11,12 +11,12 @@ let tip50 = document.querySelector('.tip-button50');
 
 
 function tipAmountPerson(r,s) {
-    tipAmount.innerHTML = `$<span> ${r} </span>`;
-    totalTip.innerHTML = `$<span> ${s} </span>`;
+    tipAmount.innerHTML = `$<span class="tip-person"> ${r} </span>`;
+    totalTip.innerHTML = `$<span class="tip-person"> ${s} </span>`;
 }
 function tipCalc (tip) {
-    let result = tip;
-    let total = tip * personsNumber.value;
+    let result = tip.toPrecision(3);
+    let total = tip.toPrecision(3) * personsNumber.value;
     tipAmountPerson(result, total);
 }
 

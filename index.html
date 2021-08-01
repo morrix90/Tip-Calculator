@@ -6,43 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Tip Calculator</title>
 </head>
 <body>
-    <div>
-        <img src="./images/logo.svg" alt="" srcset="">
-    </div>
-    <div class="bill">
-        <h4>Bill</h4>
-        <img src="./images/icon-dollar.svg" alt="">
-        <input type="number" class="bill-amount">
-    </div>
-    <div class="tip">
-        <h4> Select tip % </h4>
-        <button class="tip-button5"> 5% </button>
-        <button class="tip-button10"> 10% </button>
-        <button class="tip-button15"> 15% </button>
-        <button class="tip-button25"> 25% </button>
-        <button class="tip-button50"> 50% </button>
-    </div>
-    <div class="persons">
-        <h4>  Number of persons </h4>
-        <img src="./images/icon-person.svg" class="iconoInput"">
-        <input type="number" class="persons-number inputPadding">
-    </div>
-
-    <div>
-       <div class="tipAmount">
-            <h5> Tip Amount  </h5>
-            <p>/ person</p>
-            <p class="tipAmount-person"></p>
-       </div>
-       <div class="totalTip">
-            <h5> Total  </h5>
-            <p>/ person</p>
-            <p class="totalTip-persons"></p>
-       </div>
-
+    <div class="container">
+        <div class="logo">
+            <div>
+                <img src="./images/logo.svg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="tip-container">
+            <div class="bill">
+                <h4>Bill</h4>
+                <img src="./images/icon-dollar.svg" alt="" class="iconoInput">
+                <input type="number" class="bill-amount inputPadding input">
+                <article class="tip">
+                    <h4> Select tip % </h4>
+                    <button class="tip-button5"> 5% </button>
+                    <button class="tip-button10"> 10% </button>
+                    <button class="tip-button15"> 15% </button>
+                    <button class="tip-button25"> 25% </button>
+                    <button class="tip-button50"> 50% </button>
+                </article>
+                <article class="persons">
+                    <h4>  Number of persons </h4>
+                    <img src="./images/icon-person.svg" class="iconoInput"">
+                    <input type="number" class="persons-number inputPadding input">
+                </article>
+            </div>
+        
+            <div class="amount">
+               <div class="tipAmount">
+                    <h5> Tip Amount  </h5>
+                    <p>/ person</p>
+                    <p class="tipAmount-person"></p>
+               </div>
+               <div class="totalTip">
+                    <h5> Total  </h5>
+                    <p>/ person</p>
+                    <p class="totalTip-persons"></p>
+               </div>
+        
+            </div>
+        </div>
     </div>
     
 
